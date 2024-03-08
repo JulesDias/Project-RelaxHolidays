@@ -1,12 +1,15 @@
 public abstract class Person {
-    private String name;
-    private String email;
-    private String phoneNumber;
+    protected String firstName;
+    protected String lastName;
+    protected String email;
+    protected String password;
 
-    public Person(String name, String email, String phoneNumber) {
-        this.name = name;
+    
+    public Person(String firstName, String lastName, String email, String password ) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
-        this.phoneNumber = phoneNumber;
+        this.password = password;
     }
 
 
